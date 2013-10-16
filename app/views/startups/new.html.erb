@@ -1,0 +1,22 @@
+<div class='startup'>
+	<h3>New Startup</h3>
+
+	<%= form_for @startup, url: {action: "fill_from_angel_list"}, html: {method: 'GET'} do |f| %>
+	  <%=f.label :angel_list_url%>
+	  <%=f.text_field :angel_list_url, :required => true, :type => 'url' %><%=f.submit "Fill from AngelList"%>
+	  <%=f.label :name%>
+	  <%=f.text_field :name %>
+	  <%=f.label :city %>
+	  <%=f.text_field :city%>
+	  <%=f.label :logo%>
+	  <%=f.text_field :logo_url%>
+	  <%=f.label :product_description%>
+	  <%=f.text_area :product_description, cols: 20, rows:10%>
+	  <%=f.label :high_concept_pitch%>
+	  <%=f.text_area :high_concept_pitch, cols: 20, rows:10%>
+	  <%=f.label "Market Names"%>
+	  <%=f.text_area :market_names%>
+	<%end%>
+
+
+<end>
