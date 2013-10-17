@@ -13,7 +13,8 @@ class StartupsController < ApplicationController
 														 :product_description => json['product_desc'],
 														 :high_concept_pitch => json['high_concept'],
 														 :logo_url => json['logo_url'],
-														 :angel_list_url => json['company_url'])
+														 :company_url => json['company_url'],
+														 :angel_list_url => json['angellist_url'])
 	    json['markets'].each do |market|
 	    	@startup.add_market market['name']
 	    end

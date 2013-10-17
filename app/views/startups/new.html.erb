@@ -3,13 +3,18 @@
 	<div class="error"<h4><%="#{flash[:error]}" if flash[:error]%></h4></div>
 			<%= form_for @startup, url: {action: "fill_from_angel_list"}, html: {method: 'GET', :class => "pure-form pure-form-aligned"} do |f| %>
 	  	 <div class="pure-control-group">
-			  <%=f.label :angel_list_url%>
-			  <%=f.text_field :angel_list_url, :required => true, :type => 'url' %>
+			  <%=f.label :company_url%>
+			  <%=f.text_field :company_url, :required => true, :type => 'url' %>
 			  <button class="pure-button">Fill from AngelList</button>
 			 </div>
 			 <div class="pure-control-group">
 			  <%=f.label :name%>
 			  <%=f.text_field :name %>
+			 </div>
+
+			 <div class="pure-control-group">
+			  <%=f.label :angel_list_url%>
+			  <%=f.text_field :angel_list_url %>
 			 </div>
 
 			 <div class="pure-control-group">
