@@ -1,11 +1,12 @@
 require 'open-uri'
 require 'json'
+require 'uri'
 
 module AngelListParser
 
 	def open_url(url)
 		url = strip_url(url)
-		angellist = open("http://api.angel.co/1/startups/search.json?domain=#{url}") #will open-uri escape
+		angellist = open("http://api.angel.co/1/startups/search.json?domain=#{url}")
 		to_json(angellist.read)
 	end
 
