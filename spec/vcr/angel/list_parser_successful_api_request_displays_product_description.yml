@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.angel.co/1/startups/search.json?domain=visible.vc
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 17 Oct 2013 16:45:35 GMT
+      etag:
+      - ! '"ee95ee8049b95264b9c14bf02f3ec4a0"'
+      server:
+      - nginx
+      status:
+      - 200 OK
+      vary:
+      - Accept-Encoding
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '975'
+      x-runtime:
+      - '1443'
+      content-length:
+      - '2629'
+      connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":82745,"hidden":false,"community_profile":false,"name":"Visible","angellist_url":"https://angel.co/visible","logo_url":"https://s3.amazonaws.com/photos.angel.co/startups/i/82745-5bb8026358bafed53fa639e2cac90f77-medium_jpg.jpg?buster=1357598262","thumb_url":"https://s3.amazonaws.com/photos.angel.co/startups/i/82745-5bb8026358bafed53fa639e2cac90f77-thumb_jpg.jpg?buster=1357598262","quality":6,"product_desc":"Visible
+        simplifies the sharing, management, and reporting of data between startups
+        and investors. Visible was launched by a group of founders and investors that
+        had been struggling with the vexing, but all too common, problems of tracking
+        investment performance and managing communications between startups and investors.
+        ","high_concept":"Data sharing for startups and their investors.","follower_count":78,"company_url":"http://www.visible.vc","created_at":"2012-04-12T16:11:42Z","updated_at":"2013-09-04T21:11:20Z","crunchbase_url":null,"twitter_url":"http://twitter.com/visiblevc","blog_url":"","video_url":null,"markets":[{"id":10,"tag_type":"MarketTag","name":"SaaS","display_name":"SaaS","angellist_url":"https://angel.co/saas"},{"id":321,"tag_type":"MarketTag","name":"finance","display_name":"Finance","angellist_url":"https://angel.co/finance"},{"id":856,"tag_type":"MarketTag","name":"venture
+        capital","display_name":"Venture Capital","angellist_url":"https://angel.co/venture-capital"},{"id":15805,"tag_type":"MarketTag","name":"angel
+        investing","display_name":"Angels","angellist_url":"https://angel.co/angel-investing"}],"locations":[{"id":1648,"tag_type":"LocationTag","name":"indianapolis","display_name":"Indianapolis","angellist_url":"https://angel.co/indianapolis"}],"company_type":[],"status":{"id":109814,"message":"Early
+        stage investors & startups, version 1.0 of Visible is ready to rock. Contact
+        Mike (mike@visible.vc) for more info or to get a demo. ","created_at":"2013-09-24T04:04:56Z"},"screenshots":[{"thumb":"https://s3.amazonaws.com/screenshots.angel.co/9d/82745/c9ab52c4ccb7a68d3a6a5082c2dbff91-thumb_jpg.jpg","original":"https://s3.amazonaws.com/screenshots.angel.co/9d/82745/c9ab52c4ccb7a68d3a6a5082c2dbff91-original.png"},{"thumb":"https://s3.amazonaws.com/screenshots.angel.co/9d/82745/bc7b1217eeab29f97f3eabf21bb0309b-thumb_jpg.jpg","original":"https://s3.amazonaws.com/screenshots.angel.co/9d/82745/bc7b1217eeab29f97f3eabf21bb0309b-original.png"},{"thumb":"https://s3.amazonaws.com/screenshots.angel.co/9d/82745/3dcdbee28dbd037999742b4027aa6fdb-thumb_jpg.jpg","original":"https://s3.amazonaws.com/screenshots.angel.co/9d/82745/3dcdbee28dbd037999742b4027aa6fdb-original.png"}]}'
+    http_version: '1.1'
+  recorded_at: Thu, 17 Oct 2013 16:45:38 GMT
+recorded_with: VCR 2.6.0

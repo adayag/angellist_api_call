@@ -1,6 +1,5 @@
 require 'open-uri'
 require 'json'
-require 'uri'
 
 module AngelListParser
 

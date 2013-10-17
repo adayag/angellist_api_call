@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.angel.co/1/startups/search.json?domain=visible.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      cache-control:
+      - no-cache
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 17 Oct 2013 16:44:31 GMT
+      server:
+      - nginx
+      status:
+      - 404 Not Found
+      vary:
+      - Accept-Encoding
+      x-ratelimit-limit:
+      - '1000'
+      x-ratelimit-remaining:
+      - '976'
+      x-runtime:
+      - '1367'
+      content-length:
+      - '97'
+      connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"success":false,"error":{"type":"not_found","message":"The specified
+        item could not be found."}}'
+    http_version: '1.1'
+  recorded_at: Thu, 17 Oct 2013 16:44:34 GMT
+recorded_with: VCR 2.6.0
