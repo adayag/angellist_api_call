@@ -7,7 +7,7 @@ class StartupsController < ApplicationController
 
 	def fill_from_angel_list
 		begin
-			json = AngelListParser.open_url(params['startup']['angel_list_url'])
+			json = AngelListParser.open_url(params['startup']['company_url'])
 			@startup = Startup.new(:name => json['name'],
 														 :city => json['locations'][0]['display_name'],
 														 :product_description => json['product_desc'],
