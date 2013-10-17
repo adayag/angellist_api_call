@@ -13,7 +13,8 @@
  */
 
 .img {
-	padding-left: 20%;
+	margin-left: 15%;
+	margin-bottom: .5em;
 	height: 120px;
 	width: 120px;
 }
@@ -24,4 +25,10 @@ img {
 
 .container{
 	width: 60%;
+}
+
+.error {
+	text-align: center;
+	height: 20px;
+	color:red;
 }
